@@ -144,8 +144,8 @@ footer{
     color: #333;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     header{
-        /* background-color: red; */
+        background-color: red;
     }
-}
+} */
