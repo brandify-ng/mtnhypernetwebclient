@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Flex Design</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #top {
+            display: flex;
+            /* margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px; */
+        }
+
+        #middle {
+            display: flex;
+        }
+
+        .boxed {
+            border: solid 1px black;
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .boxedmid {
+            border: solid 1px black;
+            background-color: darkkhaki;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #four {
+            flex: 1;
+            order: 2;
+        }
+
+        #four img{
+            width: 100%;
+        }
+
+        #five {
+            flex: 2;
+        }
+
+        @media (max-width: 700px) {
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #top, #middle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section id="top">
+            <div class="boxed" id="one">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia doloremque fugiat ratione
+                    delectus vitae ut quaerat pariatur eius incidunt!</p>
+            </div>
+            <div class="boxed" id="two">
+                <h1>Control</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nesciunt iste eum temporibus dolor
+                    suscipit labore in quas officia recusandae?</p>
+            </div>
+            <div class="boxed" id="three">
+                <h1>Abilities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum expedita adipisci facere tempore
+                    unde et iste quasi dicta repellat!</p>
+            </div>
+        </section>
+        <section id="middle">
+            <div class="boxedmid" id="four">
+                <img src="../mymtn/images/login_pg_bg.png" alt="">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia doloremque fugiat ratione
+                    delectus vitae ut quaerat pariatur eius incidunt!</p>
+            </div>
+            <div class="boxedmid" id="five">
+                <h1>Control</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nesciunt iste eum temporibus dolor
+                    suscipit labore in quas officia recusandae?</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

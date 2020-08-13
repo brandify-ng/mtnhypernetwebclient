@@ -1,0 +1,33 @@
+1. open a folder named fonts in the same place where css folder is
+2. place the "MTNBrighterSans-Regular.otf" file into that folder
+3. add the code below to your css stylesheet
+4. Option I is for those who did not open a div with class container
+5. Option II (if you opened a div with class container) this works for you.
+
+Option I
+@font-face {
+    font-family: mtnFont;
+    src: url('../fonts/MTNBrighterSans-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* all text elements */
+h1, h2, h3, h4, h5, h6, p{
+    font-family: mtnFont;
+}
+
+Option II
+@font-face {
+    font-family: mtnFont;
+    src: url('../fonts/MTNBrighterSans-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* container element */
+div{
+    font-family: mtnFont; 
+}
